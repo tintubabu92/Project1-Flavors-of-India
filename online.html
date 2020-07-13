@@ -61,7 +61,13 @@ width:65px;
   width: 400px;
 }
 
-
+#mid{
+background-color: orange;
+ margin: auto;
+  width: 50%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  height: 300px;
 </style>
 </head>
 <body>
@@ -86,8 +92,26 @@ width:65px;
 </div>
 <div>
   <h1 align="center" style="color: white;">Online order</h1>
-  <button>Create Account</button>
-  <button>Login</button>
+</div>
+<div style="background-image:url('front.jpg');background-repeat: no-repeat;background-size: cover; padding-left:5px;padding-top: 5px;background-color: black;image-rendering: crisp-edges;text-align: center;">
+  <br>
+<div id="mid">
+  <center>
+  <button>Pick Up</button>
+  <button>Delivery</button>
+</center>
+<form  method="post">
+  <div align="center">
+    <input type="radio" id="m" name="order">
+  <label for="Order now">Order now</label><br>
+  <input type="radio" id="m" name="order">
+  <label for="Schedule for later">Schedule for later</label><br>
+  <center>
+    <button>Order</button>
+  </center>
+  </div>
+</form>
+  </div>
 </div>
 </body>
 </html>
