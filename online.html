@@ -34,7 +34,21 @@ body {
     background-color: white;
     background-image: url("front.jpg");
 }
-
+.button {
+  background-color:#D3D3D3 ;
+  border: none;
+  color: black;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 270px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #f44336;
+}
 h4{
  font-family: 'Great Vibes';
 font-size: 50px; 
@@ -61,7 +75,13 @@ width:65px;
   width: 400px;
 }
 
-
+#mid{
+background-color: orange;
+ margin: auto;
+  width: 50%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  height: 300px;
 </style>
 </head>
 <body>
@@ -86,8 +106,27 @@ width:65px;
 </div>
 <div>
   <h1 align="center" style="color: white;">Online order</h1>
-  <button>Create Account</button>
-  <button>Login</button>
+</div>
+<div style="background-image:url('front.jpg');background-repeat: no-repeat;background-size: cover; padding-left:5px;padding-top: 5px;background-color: black;image-rendering: crisp-edges;text-align: center;">
+  <br>
+<div id="mid">
+ 
+
+<form  method="post">
+  <div align="center">
+<br><br><br>
+    <button class="button"> Pick Up</button><br><br>
+    <button class="button"> Delivery</button><br><br>
+    <input type="radio" id="m" name="order">
+  <label for="Order now">Order now</label><br>
+  <input type="radio" id="m" name="order">
+  <label for="Schedule for later">Schedule for later</label><br>
+  </div><br><br>
+  <button class="button">Order</button>
+</form>
+
+
+  </div>
 </div>
 </body>
 </html>
